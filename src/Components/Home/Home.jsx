@@ -6,6 +6,9 @@ import what_app_logo from '../../assests/whatsApp.png'
 import child_img from '../../assests/child_img.png'
 import boxes from '../../assests/testimonial'
 import about_img from '../../assests/about_img.jpg'
+import img1 from '../../assests/img1.jpg'
+import img2 from '../../assests/img2.jpg'
+import img3 from '../../assests/img3.png'
 
 
 // work-section 
@@ -53,6 +56,17 @@ export default function Home() {
         }
     };
 
+
+
+    //testimonials 
+
+    const [currentBox, setCurrentBox] = useState(0);
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setCurrentBox(prev => (prev + 1) % 3);
+        }, 4000); // Change box every 3 seconds
+        return () => clearInterval(interval);
+    }, []);
 
 
 
@@ -245,8 +259,8 @@ export default function Home() {
                 <p className='para'>Review from our partners</p>
                 <h1>Our partners are the</h1>
                 <p className='sec-para' >Our members are the heart of everything we do, and we're grateful for their valuable insights and feedback, which help us continuously improve and refine our services to meet their needs, ensure their satisfaction, and build a better experience for everyone in our community.</p>
-                <div className='testimonials-box' >
-                    {boxes.map((box, index) => (
+                <div className='testimonials-box ' >
+                    {/* {boxes.map((box, index) => (
                         <div key={index} className='testimonials-inside-box'>
                             <p>{box.des}</p>
                             <div>
@@ -254,8 +268,31 @@ export default function Home() {
                                 <h2>{box.name} <br /><span>{box.pos}</span> </h2>
                             </div>
                         </div>
-                    ))}
+                    ))} */}
+                    <div className={`testimonials-inside-box ${currentBox === 0 ? "visible" : ""} `}>
+                        <p>I was impressed by how fast my large certificate request was handled - 1200 certificates without a hitch. The process was incredibly smooth.</p>
+                        <div>
+                            <img src={img1} alt="" />
+                            <h2>Rajendra Prasad <br /> <span>Founder, Darhub Automation Pvt. Ltd</span> </h2>
+                        </div>
+                    </div>
+                    <div className={`testimonials-inside-box ${currentBox === 1 ? "visible" : ""} `}>
+                        <p>The website is a very easy to use, with a really nice interface that makes navigating and understanding simpler. But what really stood out was the support team's prompt and helpful responses.</p>
+                        <div>
+                            <img src={img2} alt="" />
+                            <h2>Sachidananda Prusty  <br /><span>CEO, INDMEET</span> </h2>
+                        </div>
+                    </div>
+                    <div className={`testimonials-inside-box ${currentBox === 2 ? "visible" : ""} `}>
+                        <p>I have tried other certificate issuance before but this one really good. I'm so happy with the customisation options - being able to tailor the email and certificate to our needs made all the difference. Very satisfactory experience!</p>
+                        <div>
+                            <img src={img3} alt="" />
+                            <h2>Shivam Kumar  <br /><span>GDSC Lead '23</span> </h2>
+                        </div>
+                    </div>
                 </div>
+
+
             </div>
 
 
