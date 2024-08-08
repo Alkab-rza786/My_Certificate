@@ -105,7 +105,7 @@ export default function Home() {
                             <button>Enroll now</button>
                         </div>
                     </div>
-                    <a href="https://api.whatsapp.com/send/?phone=918249001085&text=Hello&type=phone_number&app_absent=0"><div className="what-app-logo">
+                    <a href="https://wa.me/7653833191?text=I'm%20interested%20in%20buying%20the%20Credential%20System.%20May%20I%20get%20more%20information%20"><div className="what-app-logo">
                         <img src={what_app_logo} alt="" />
                     </div></a>
                 </div>
@@ -188,7 +188,7 @@ export default function Home() {
 
                         </div>
                         <div className="pricing-btn">
-                            <button>Buy Now</button>
+                            <a href="https://wa.me/7653833191?text=I'm%20interested%20in%20the%20Basic%20Plan"><button>Buy Now</button></a>
                         </div>
                     </div>
                     <div className="pricing-box">
@@ -208,7 +208,8 @@ export default function Home() {
 
                         </div>
                         <div className="pricing-btn">
-                            <button>Buy Now</button>
+                            <a href="https://wa.me/7653833191?text=I'm%20interested%20in%20the%20Premium%20Plan"><button>Buy Now</button></a>
+
                         </div>
                     </div>
                     <div className="pricing-box">
@@ -229,7 +230,8 @@ export default function Home() {
 
                         </div>
                         <div className="pricing-btn">
-                            <button>Get Quatation</button>
+                            <a href="https://wa.me/7653833191?text=I'm%20interested%20in%20the%20Business%20Premium%20Plan"> <button>Get Quatation</button></a>
+
                         </div>
                     </div>
 
@@ -260,15 +262,7 @@ export default function Home() {
                 <h1>Our partners are the</h1>
                 <p className='sec-para' >Our members are the heart of everything we do, and we're grateful for their valuable insights and feedback, which help us continuously improve and refine our services to meet their needs, ensure their satisfaction, and build a better experience for everyone in our community.</p>
                 <div className='testimonials-box ' >
-                    {/* {boxes.map((box, index) => (
-                        <div key={index} className='testimonials-inside-box'>
-                            <p>{box.des}</p>
-                            <div>
-                                <img src={box.img} alt="" />
-                                <h2>{box.name} <br /><span>{box.pos}</span> </h2>
-                            </div>
-                        </div>
-                    ))} */}
+
                     <div className={`testimonials-inside-box ${currentBox === 0 ? "visible" : ""} `}>
                         <p>I was impressed by how fast my large certificate request was handled - 1200 certificates without a hitch. The process was incredibly smooth.</p>
                         <div>
@@ -359,7 +353,7 @@ export default function Home() {
                 </div>
                 <hr />
                 <p className='footer-copyright'>
-                    Copyright © 2024 My Certificate Powered by TECHOCTANET SERVICES PVT LTD
+                    <span>Copyright © 2024 </span>  a  <span >  My Certificate Powered by TECHOCTANET SERVICES PVT LTD</span>
                 </p>
             </div>
 
