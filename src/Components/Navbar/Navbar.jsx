@@ -30,7 +30,7 @@ function Navbar() {
             <div className="nav-list  "  >
                 <ul ref={menuRef} >
 
-                    <a href="#home"><li>Home</li></a>
+                    <a href="#home" onClick={closeMenu} ><li>Home</li></a>
                     <a href="#service" onClick={closeMenu} ><li>Services</li></a>
                     <a href="#pricing" onClick={closeMenu} > <li>Pricing</li></a>
                     <a href="#about" onClick={closeMenu} > <li>About us</li></a>

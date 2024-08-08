@@ -60,14 +60,34 @@ export default function Home() {
 
     //testimonials 
 
-    const [currentBox, setCurrentBox] = useState(0);
-    useEffect(() => {
-        const interval = setInterval(() => {
-            setCurrentBox(prev => (prev + 1) % 3);
-        }, 4000); // Change box every 3 seconds
-        return () => clearInterval(interval);
-    }, []);
+    // const [currentBox, setCurrentBox] = useState(0);
+    // useEffect(() => {
+    //     const interval = setInterval(() => {
+    //         setCurrentBox(prev => (prev + 1) % 3);
+    //     }, 4000); // Change box every 3 seconds
+    //     return () => clearInterval(interval);
+    // }, []);
 
+    const [currentBox, setCurrentBox] = useState(0);
+    const [isPaused, setIsPaused] = useState(false);
+
+    useEffect(() => {
+        let interval;
+        if (!isPaused) {
+            interval = setInterval(() => {
+                setCurrentBox(prev => (prev + 1) % 3);
+            }, 4000); // Change box every 4 seconds
+        }
+        return () => clearInterval(interval);
+    }, [isPaused]);
+
+    const handleMouseEnter = () => {
+        setIsPaused(true);
+    };
+
+    const handleMouseLeave = () => {
+        setIsPaused(false);
+    };
 
 
 
@@ -92,7 +112,8 @@ export default function Home() {
 
                     {/* ADDING HERE */}
                     <div className="try">
-                        <button>Get Started</button>
+                        <a href="https://wa.me/7653833191?text=I'm%20interested%20in%20buying%20the%20Credential%20System.%20May%20I%20get%20more%20information%20"><button>Get Started</button></a>
+
                     </div>
                     <div className="para"><p>Certify with ease! Our platform revolutionizes the way organizations issue certificates, making it fast, secure, and affordable. With instant issuance, no volume limits, and 24/7 support. </p></div>
                     <div className="home-right">
@@ -231,7 +252,6 @@ export default function Home() {
                         </div>
                         <div className="pricing-btn">
                             <a href="https://wa.me/7653833191?text=I'm%20interested%20in%20the%20Business%20Premium%20Plan"> <button>Get Quatation</button></a>
-
                         </div>
                     </div>
 
@@ -246,8 +266,8 @@ export default function Home() {
                         <img src={about_img} className='about-img' />
                     </div>
                     <div className="about-right">
-                        <h2>Empowering Trust with Verifiable Credentials</h2>
-                        <p>
+                        <h2>Empowering Trust With Verifiable Credentials</h2>
+                        <p  >
                             Create stunning, professional certificates with unmatched speed and ease. Our platform is designed to simplify the entire certification process, from initial design to final delivery. Choose from our vast library of beautiful templates or unleash your creativity with our customization options to perfectly align with your brand identity. Enjoy a seamless experience with our user-friendly interface and dedicated expert support, guiding you every step of the way.
 
                         </p>
@@ -261,7 +281,13 @@ export default function Home() {
                 <p className='para'>Review from our partners</p>
                 <h1>Our partners are the</h1>
                 <p className='sec-para' >Our members are the heart of everything we do, and we're grateful for their valuable insights and feedback, which help us continuously improve and refine our services to meet their needs, ensure their satisfaction, and build a better experience for everyone in our community.</p>
-                <div className='testimonials-box ' >
+                <div className='testimonials-box '
+                    onMouseEnter={handleMouseEnter}
+                    onMouseLeave={handleMouseLeave}
+                    onTouchStart={handleMouseEnter}
+                    onTouchEnd={handleMouseLeave}
+
+                >
 
                     <div className={`testimonials-inside-box ${currentBox === 0 ? "visible" : ""} `}>
                         <p>I was impressed by how fast my large certificate request was handled - 1200 certificates without a hitch. The process was incredibly smooth.</p>
@@ -353,7 +379,7 @@ export default function Home() {
                 </div>
                 <hr />
                 <p className='footer-copyright'>
-                    <span>Copyright © 2024 </span>  a  <span >  My Certificate Powered by TECHOCTANET SERVICES PVT LTD</span>
+                    <span>Copyright © 2024 </span>    <span >  My Certificate Powered by TECHOCTANET SERVICES PVT LTD</span>
                 </p>
             </div>
 
