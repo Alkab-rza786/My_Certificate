@@ -101,7 +101,8 @@ export default function Home() {
                     <h1>Generate Certificate For <span>Your Organisation</span></h1>
                     <p className='big-view'>Certify with ease! Our platform revolutionizes the way organizations issue certificates, making it fast, secure, and affordable. With instant issuance, no volume limits, and 24/7 support, you can streamline your certification process and empower your students and employees to reach their full potential. </p>
                     <div className="home-left-btn">
-                        <button>Get Started</button>
+                        <a href="https://wa.me/7653833191?text=I'm%20interested%20in%20buying%20the%20Credential%20System.%20May%20I%20get%20more%20information%20"> <button>Get Started</button></a>
+
                     </div>
                 </div>
                 <div className="main-right">
@@ -123,7 +124,8 @@ export default function Home() {
                         <h2>Certification</h2>
                         <p>Customize certificates with our templates or your design. Elevate credentials, amplify your brand.Easy to personalize and professional. Make every achievement stand out</p>
                         <div className="home-right-btn">
-                            <button>Enroll now</button>
+                            <a href="https://wa.me/7653833191?text=I'm%20interested%20in%20buying%20the%20Credential%20System.%20May%20I%20get%20more%20information%20"> <button>Enroll now</button></a>
+
                         </div>
                     </div>
                     <a href="https://wa.me/7653833191?text=I'm%20interested%20in%20buying%20the%20Credential%20System.%20May%20I%20get%20more%20information%20"><div className="what-app-logo">
