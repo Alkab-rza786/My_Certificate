@@ -323,7 +323,7 @@ export default function Home() {
                         <ul>
                             <li><i class="fa-solid fa-message"></i>info.mycertificate@octanet.in</li>
                             <li><i class="fa-solid fa-phone-volume"></i>+91 76538 33191</li>
-                            <li><i class="fa-solid fa-location-dot"></i>77 Massachusetts Ave, Cambridge <br /> MA 08908, United States</li>
+                            <li><i class="fa-solid fa-location-dot"></i>Bhubaneswar Odisha India</li>
                         </ul>
                     </div>
                     <div className="contact-col">
