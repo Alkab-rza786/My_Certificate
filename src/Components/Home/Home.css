@@ -140,7 +140,7 @@
 
 .what-app-logo {
     position: fixed;
-    left: 1%;
+    right: 1%;
     bottom: 4%;
     background: #41e960;
     padding: 10px;
@@ -781,10 +781,14 @@
         margin-top: 30px;
     }
 
+    .footer hr {
+        margin: 10px 0px;
+    }
+
     .footer-content {
         display: flex;
         flex-direction: column;
-        gap: 35px;
+        gap: 30px;
     }
 
     .footer-copyright {
@@ -1197,6 +1201,11 @@
 }
 
 @media (max-width:500px) {
+
+    .service {
+        padding-bottom: 20px;
+    }
+
     .service h1 {
         font-size: 34px;
     }

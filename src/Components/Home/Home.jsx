@@ -58,15 +58,7 @@ export default function Home() {
 
 
 
-    //testimonials 
 
-    // const [currentBox, setCurrentBox] = useState(0);
-    // useEffect(() => {
-    //     const interval = setInterval(() => {
-    //         setCurrentBox(prev => (prev + 1) % 3);
-    //     }, 4000); // Change box every 3 seconds
-    //     return () => clearInterval(interval);
-    // }, []);
 
     const [currentBox, setCurrentBox] = useState(0);
     const [isPaused, setIsPaused] = useState(false);
@@ -76,7 +68,7 @@ export default function Home() {
         if (!isPaused) {
             interval = setInterval(() => {
                 setCurrentBox(prev => (prev + 1) % 3);
-            }, 4000); // Change box every 4 seconds
+            }, 4000);
         }
         return () => clearInterval(interval);
     }, [isPaused]);
@@ -185,7 +177,7 @@ export default function Home() {
                     <div className="work-step-one">
                         <div className="work-step-icon"><i class="fa-solid fa-thumbs-up"></i></div>
                         <div className="work-step-des">
-                            <h2>Satisfaction Guarntee</h2>
+                            <h2>Satisfaction Guarantee</h2>
                             <p>Enjoy 24/7 dedicated support for a hassle-free experience, with prompt issue resolution and expert assistance.</p>
                         </div>
                     </div>
@@ -368,7 +360,7 @@ export default function Home() {
                             <li>Home</li>
                             <li>About</li>
                             <li>Pricing</li>
-                            <li>Privacey policy</li>
+                            <li>Privacy policy</li>
                         </ul>
                     </div>
                     <div className="footer-content-right">
@@ -381,7 +373,7 @@ export default function Home() {
                 </div>
                 <hr />
                 <p className='footer-copyright'>
-                    <span>Copyright © 2024 </span>    <span >  My Certificate Powered by TECHOCTANET SERVICES PVT LTD</span>
+                    <span>Copyright © 2024   My Certificate </span>    <span >   Powered by TECHOCTANET SERVICES PVT LTD</span>
                 </p>
             </div>
 
