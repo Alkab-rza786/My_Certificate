@@ -768,6 +768,10 @@
     border: 0;
 }
 
+.footer .footer-copyright a {
+    color: #d9d9d9;
+}
+
 .footer-copyright {
     margin-bottom: 10px;
     display: flex;

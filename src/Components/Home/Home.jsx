@@ -373,7 +373,7 @@ export default function Home() {
                 </div>
                 <hr />
                 <p className='footer-copyright'>
-                    <span>Copyright © 2024   My Certificate </span>    <span >   Powered by TECHOCTANET SERVICES PVT LTD</span>
+                    <span>Copyright © 2024   My Certificate </span>    <a href="/index.html" target="_blank" rel="noopener noreferrer" >Privacy Policy</a>
                 </p>
             </div>
 
