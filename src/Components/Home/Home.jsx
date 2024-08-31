@@ -360,7 +360,7 @@ export default function Home() {
                             <li>Home</li>
                             <li>About</li>
                             <li>Pricing</li>
-                            <li>Privacy policy</li>
+                            <li><a href="/index.html" target="_blank" rel="noopener noreferrer" style={{ color: "#d9d9d9" }} >Privacy Policy</a></li>
                         </ul>
                     </div>
                     <div className="footer-content-right">
