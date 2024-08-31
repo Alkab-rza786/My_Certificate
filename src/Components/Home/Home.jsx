@@ -265,7 +265,12 @@ export default function Home() {
                             Create stunning, professional certificates with unmatched speed and ease. Our platform is designed to simplify the entire certification process, from initial design to final delivery. Choose from our vast library of beautiful templates or unleash your creativity with our customization options to perfectly align with your brand identity. Enjoy a seamless experience with our user-friendly interface and dedicated expert support, guiding you every step of the way.
 
                         </p>
-                        <p>We prioritize your security and satisfaction. Our transparent pricing and scalable solutions grow with your needs. <span style={{ color: "royalblue", fontWeight: "500" }}>MyCertificate (Now part of OctaNet) </span> will streamlinestreamline operations, reduce costs, and elevate your brand to new heights</p>
+                        <p>
+                            We prioritize your security and satisfaction. Our transparent pricing and scalable solutions grow with your needs.
+                            <span style={{ color: "royalblue", fontWeight: "500" }}> MyCertificate </span>
+                            will streamline operations, reduce costs, and elevate your brand to new heights.
+                        </p>
+
                     </div>
                 </div>
             </div>
