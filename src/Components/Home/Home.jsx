@@ -365,7 +365,7 @@ export default function Home() {
                             <li>Home</li>
                             <li>About</li>
                             <li>Pricing</li>
-                            <li><a href="/index.html" target="_blank" rel="noopener noreferrer" style={{ color: "#d9d9d9" }} >Privacy Policy</a></li>
+                            <li><a href="/privacy.html" target="_blank" rel="noopener noreferrer" style={{ color: "#d9d9d9" }} >Privacy Policy</a></li>
                         </ul>
                     </div>
                     <div className="footer-content-right">
@@ -378,7 +378,7 @@ export default function Home() {
                 </div>
                 <hr />
                 <p className='footer-copyright'>
-                    <span>Copyright © 2024   My Certificate </span>    <a href="/index.html" target="_blank" rel="noopener noreferrer" >Privacy Policy</a>
+                    <span>Copyright © 2024   My Certificate </span>    <a href="/privacy.html" target="_blank" rel="noopener noreferrer" >Privacy Policy</a>
                 </p>
             </div>
 
